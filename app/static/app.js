@@ -67,7 +67,6 @@ function showPrice(distance) {
     console.log(distance);
     var swedishMile = 10000;
     var averageLiterPerMile = 0.5;
-    var dieselCostPerLiter = 16;
-    var carPaymentPerLiter = 1;
-    $('#price').text("You have to pay " + Math.round((((distance * 2) / swedishMile) * averageLiterPerMile) * (dieselCostPerLiter + carPaymentPerLiter)) + "kr for this trip.");
+    var cost = 18.5;
+    $('#price').text("You have to pay " + Math.round((((distance * 2) / swedishMile) * averageLiterPerMile) * (cost)) + "kr for this trip.");
 }
