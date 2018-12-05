@@ -48,6 +48,9 @@ function loadMap() {
     directionsObject.on('destination', function() {
         findDistance(directionsObject);
     });
+    directionsObject.on('origin', function() {
+        findDistance(directionsObject);
+    });
 }
 
 //Finds the distance of the route between the origin and destination
