@@ -71,6 +71,6 @@ function showPrice(distance) {
     var swedishMile = 10000;
     var cost = 18.5;
     $('#pre').text("You have to pay");
-    $('#cost').text(Math.round((distance / swedishMile) * cost) + "kr");
+    $('#cost').text(Math.round(((2 * distance) / swedishMile) * cost) + "kr");
     $('#post').text("for this trip");
 }
