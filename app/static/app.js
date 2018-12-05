@@ -34,6 +34,10 @@ function loadMap() {
     var directionsObject = new MapboxDirections({
         accessToken: mapboxgl.accessToken,
         unit: 'metric',
+        controls: {
+            instructions: false,
+            profileSwitcher: false
+        }
     });
     map.addControl(directionsObject, 'top-left');
 
