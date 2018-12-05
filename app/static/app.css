@@ -24,7 +24,13 @@
     align-self: center;
     font-family: unisans;
     font-weight: bold;
+    text-align: center;
     color: #fff;
+}
+
+.cost {
+    font-size: 30;
+    padding: 20 0;
 }
 
 body {

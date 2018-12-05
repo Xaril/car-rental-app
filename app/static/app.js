@@ -68,9 +68,9 @@ function findDistance(directionsObject) {
 
 //Calculate the cost of a trip to the destination and back to the origin.
 function showPrice(distance) {
-    console.log(distance);
     var swedishMile = 10000;
-    var averageLiterPerMile = 0.5;
     var cost = 18.5;
-    $('#price').text("You have to pay " + Math.round((((distance * 2) / swedishMile) * averageLiterPerMile) * (cost)) + "kr for this trip.");
+    $('#pre').text("You have to pay");
+    $('#cost').text(Math.round((distance / swedishMile) * cost) + "kr");
+    $('#post').text("for this trip.");
 }
